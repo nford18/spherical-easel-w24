@@ -3,6 +3,7 @@ node_modules
 /dist
 ts-out
 coverage
+.env
 
 # local env files
 .env.local
