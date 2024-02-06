@@ -48,3 +48,4 @@ docs/.vuepress/dist
 # Cache
 .yarn/cache
 /yarn.lock
+.env
