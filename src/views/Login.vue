@@ -167,7 +167,7 @@ function parseUserProfile(uid: string) {
     if (ds?.exists()) {
       const uProfile = ds.data() as UserProfile;
       console.debug("User Profile Details from Firestore", uProfile);
-      const { favoriteTools, displayName, profilePictureURL } = uProfile;
+      const { favoriteTools, displayName, profilePictureURL, starredConstructions } = uProfile;
       if (userDisplayedName.value === undefined)
         acctStore.userDisplayedName = displayName
       if (userProfilePictureURL.value === undefined)

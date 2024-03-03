@@ -35,6 +35,7 @@ export const useAccountStore = defineStore("acct", () => {
   const excludedTools: Ref<ActionMode[]> = ref([]);
   const favoriteTools: Ref<Array<Array<ActionMode>>> = ref(DEFAULT_TOOL_NAMES);
   const constructionDocId: Ref<string | null> = ref(null);
+  const starredConstructions: Ref<Array<String>> = ref([])
   const constructionSaved = ref(false);
 
   const hasUnsavedWork = computed((): boolean => false);
@@ -90,6 +91,7 @@ export const useAccountStore = defineStore("acct", () => {
     includeToolName,
     excludeToolName,
     resetToolset,
-    parseAndSetFavoriteTools
+    parseAndSetFavoriteTools,
+    starredConstructions
   };
 });

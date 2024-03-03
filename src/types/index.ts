@@ -606,6 +606,7 @@ export interface UserProfile {
   location?: string;
   role?: string;
   favoriteTools?: string;
+  starredConstructions?: Array<String>;
 }
 
 export enum AngleMode {
